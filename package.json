@@ -27,7 +27,6 @@
       "extends": [
         "config:base"
       ],
-      "pinVersions": false,
       "labels": [
         "renovate"
       ],
@@ -41,7 +40,15 @@
       "schedule": [
         "every weekend"
       ],
-      "commitMessage": ":arrow_up: {{semanticPrefix}}Update dependency {{depName}} to version {{newVersion}}"
+      "commitMessagePrefix": ":arrow_up:",
+      "hostRules": [
+        {
+          "domainName": "github.com",
+          "encrypted": {
+            "token": "lWVQkjSEnbMDLegy8MHduvpZG9UlUS2KU7zpx7xDdR+jbMLxt1bKZ7NMSf3RfoJcR+Jvikb5TqTGDqQhuNA7NCzBzh4pGWDd76/8qwKQywafySm7Rp/22AyaDSR3BvjAJ65h7rd9NNQ6Kaqo6EXdjD3sjde5sZfWGEianK/tO2Dwz9rjqw7yqCzEstiH7+7frHqRYG0+V947pxzDp+eOL4Xx1B2PMaSy1L/KSC357mwxDNLEA1MeZ8S7NSv0C63x1RyERLOeijEofvGbGZkzVSIfJTwuw4QXMQRSoRekwu1GbxQILmgAxmGODljwKRMDAP5rm2+onxbmmdovrOnarA=="
+          }
+        }
+      ]
     }
   },
   "devDependencies": {
