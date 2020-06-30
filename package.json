@@ -41,7 +41,7 @@
       "schedule": [
         "every weekend"
       ],
-      "commitMessagePrefix": ":arrow_up:"
+      "commitMessagePrefix": "⬆️"
     }
   },
   "devDependencies": {
