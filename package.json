@@ -27,7 +27,18 @@
       "extends": [
         "config:base"
       ],
+      "description": ["Gluons' personal Renovate shareable config."],
       "rangeStrategy": "replace",
+      "packageRules": [
+        {
+          "depTypeList": [
+            "devDependencies",
+            "peerDependencies",
+            "optionalDependencies"
+          ],
+          "automerge": true
+        }
+      ],
       "labels": [
         "renovate"
       ],
