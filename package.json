@@ -1,6 +1,6 @@
 {
   "name": "renovate-config-gluons",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "Gluons' personal Renovate shareable config.",
   "scripts": {
     "test": "jest"
@@ -33,7 +33,10 @@
       "rangeStrategy": "replace",
       "packageRules": [
         {
-          "updateTypes": ["minor", "patch"],
+          "updateTypes": [
+            "minor",
+            "patch"
+          ],
           "automerge": true
         }
       ],
