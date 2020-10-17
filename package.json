@@ -33,11 +33,7 @@
       "rangeStrategy": "replace",
       "packageRules": [
         {
-          "depTypeList": [
-            "devDependencies",
-            "peerDependencies",
-            "optionalDependencies"
-          ],
+          "updateTypes": ["minor", "patch"],
           "automerge": true
         }
       ],
